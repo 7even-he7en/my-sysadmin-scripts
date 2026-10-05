@@ -12,7 +12,7 @@ RUN apt-get update && \
 # Рабочая директория внутри контейнера
 WORKDIR /var/www
 
-# Копируем ваш скрипт мониторинга (из ДЗ №1) в контейнер
+# Копируем скрипт мониторинга (из ДЗ №1) в контейнер
 COPY script.sh /usr/local/bin/script.sh
 RUN chmod +x /usr/local/bin/script.sh
 
