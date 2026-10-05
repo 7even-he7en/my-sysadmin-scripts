@@ -16,5 +16,5 @@ WORKDIR /var/www
 COPY script.sh /usr/local/bin/script.sh
 RUN chmod +x /usr/local/bin/script.sh
 
-# Команда запуска: сначала отрабатывает ваш скрипт, затем поднимается веб-сервер
+# Команда запуска: сначала отрабатывает скрипт, затем поднимается веб-сервер
 CMD ["/bin/bash", "-c", "/usr/local/bin/script.sh & exec python3 -m http.server 8080"]
